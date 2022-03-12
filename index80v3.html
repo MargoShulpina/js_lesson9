@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница, к которой подключен jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#but1").click(function () {
+        $("[href]").hide();
+      });
+      $("#but2").click(function () {
+        $("[href]").show();
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="but1">Спрятать элементы с атрибутом href</button>
+  <button id="but2">Показать элементы с атрибутом href</button>
+  
+  <p>Ссылки на предыдущие работы:</p>
+  <p><a href="./index76.html">Работа с jQuery - Index76</a></p>
+  <p><a href="./index77.html">Работа с jQuery - Index77</a></p>
+  <p><a href="./index78.html">Работа с jQuery - Index78</a></p>
+  <p><a href="./index79.html">Работа с jQuery - Index79</a></p>
+  
+</body>
+</html>
